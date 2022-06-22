@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* Main CSS */
+
+.header-section{
+    background-color: #fff;
+    padding: 5px 0;
+    box-shadow: 0px -6px 20px lightgrey;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.header-logo{
+    width: 30%;
+}
+
+.logo img {
+    height: 45px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+
+.logo span{
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.header-menu{
+    width: 60%;
+}
+
+.header-button{
+    width: 10%;
+}
+.primary-menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.primary-menu ul li a{
+    display: block;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 60px;
+    
+}
+
+
+.header-btn{
+    border: 2px solid #6278df;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #6278df !important;
+    transition: 0.4s;
+}
+
+.header-btn:hover{
+    background-color: #6278df;
+    color: #fff !important;
+}
+
+
+
+.header-section a{
+    color: #010101;
+}
+
+/* Dropdown Menu CSS */
+
+.primary-menu ul li{
+    position: relative;
+}
+
+.dropdown{
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+}
+
+.primary-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 187px;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+
+.primary-menu ul li:hover ul{
+ opacity: 1;
+ visibility: visible;
+ transform: scaleY(1);
+}
+
+
+
+
+/* Banner CSS */
+
+.banner-section{
+    background-image: url(images/mbr-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 150px 0;
+    color: #fff;
+    position: relative;
+    z-index: 9;
+    margin-top: 70px;
+}
+.banner-section::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    opacity: 0.4;
+    z-index: -1;
+}
+.banner-content h2{
+    font-size: 60px;
+    padding: 30px 0;
+}
+.banner-content h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+.default-btn{
+    color: gray;
+    padding: 20px 30px;
+    border-radius: 6px;
+    background-color: #fff;
+    display: inline-block;
+    font-size: 21px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.4s;
+}
+
+.default-btn:hover{
+    background-color: #6278df;
+    color: #fff;
+}
+
+.banner-bottom{
+    background-color: #f7f9ff;
+    padding: 100px 0;
+}
+.video-left{
+    width: 48%;
+}
+.video-content-text{
+    width: 48%;
+}
+.video-content-text h3{
+    font-size: 45px;
+    line-height: 63px;
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+.video-content-text p{
+    color: #767676;
+    font-size: 18px;
+    line-height: 1.7em;
+    font-weight: 300;
+}
+
+.service-section{
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.section-title h1{
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 63px;
+    margin-bottom: 26px;
+}
+.section-title p{
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 38px;
+    color: #767676;
+}
+
+/* services items */
+
+.services-items{
+    margin-top: 90px;
+}
+.service-box{
+    width: 31.33%;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+    transition: all 0.3s;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding: 40px 30px;
+    border-radius: 5px;
+}
+
+.service-box:hover{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 20%);
+}
+
+
+.service-icon{
+    width: 60px;
+    min-height: 150px;
+    float: left;
+    font-size: 45px;
+    color: #6278df;
+    margin-right: 20px;
+}
+
+.service-text h3 {
+    font-size: 26px;
+    line-height: 38px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+.service-text p{
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #767676;
+}
+
+/* Pricing Table CSS */
+
+.pricing-table-section{
+    background-color: #F7F9FF;
+    padding: 50px;
+}
+
+.section-title h2{
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 63px;
+    padding-bottom: 30px;
+}
+
+.section-title {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 63px;
+}
+
+.pricing-tables{
+    margin-top: 50px;
+}
+
+.pricing-table-item{
+    width: 31.33%;
+    margin: 1%;
+    background-color: #fff;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+}
+
+.pricing-table-item:nth-child(3){
+    margin-right: 0;
+}
+   
+
+.pricing-table-heading{
+    padding: 30px;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.pricing-table-heading h3{
+    font-size: 58px;
+    line-height: 63px;
+    font-weight: 700;
+    padding: 25px 0;
+}
+
+.pricing-table-heading h3 span{
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: 700;
+}
+.pricing-table-heading h4{
+    font-size: 26px;
+    line-height: 38px;
+    font-weight: 500;
+}
+.pricing-table-heading h5{
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.pricing-table-heading p{
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: 300;
+}
+
+.pricing-table-content{
+    padding: 30px;
+    padding-bottom: 60px;
+}
+
+.pricing-table-content ul{
+    list-style: none;
+}
+.pricing-table-content ul li{
+    padding: 15px 0;
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: 300;
+    color: #767676;
+}
+
+.pricing-table-content ul li span{
+    display: inline-block;
+    width: 40px;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #6278df;
+}
+
+.pricing-btn .default-btn{
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 20%);
+}
+
+.pricing-table-item:hover .pricing-table-heading{
+    background-color: #6278df;
+    color: #fff;
+}
+
+.pricing-table-item:hover .pricing-btn .default-btn{
+    background-color: #6278df;
+    color: #fff;
+}
+
+.pricing-btn {
+    padding-top: 20px;
+}
+
+
+/* Team-section */
+
+
+.team-section{
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.team-section .section-title h2{
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 63px;
+    padding-top: 30px;
+}
+
+.team-members{
+    padding-top: 50px;
+}
+
+.member{
+    width: 23%;
+    margin-right: 2%;
+    background-color: #fff;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+}
+
+.member img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.member-bio{
+    padding: 30px 20px;
+}
+
+.member-bio h4{
+    font-size: 26px;
+    line-height: 38px;
+    font-weight: 500;
+}
+
+.member-bio p{
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: 300;
+    color: #767676;
+}
