@@ -451,3 +451,52 @@ a{
     font-weight: 300;
     color: #767676;
 }
+
+
+/* newslatter-section css */
+
+.newslatter-section{
+    background-color: #F7F9FF;
+    padding: 80px 0;
+}
+
+.section-title.newslatter-title h2{
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 63px;
+    padding: 30px 0;
+}
+
+.newslatter-form{
+    padding-bottom: 30px;
+}
+
+ .default-input{
+    width: 300px;
+    padding: 20px 15px;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 1px solid #e4e4e4;
+ }
+
+ .submit-btn{
+    width: 250px;
+    padding: 20px 15px;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 1px solid #e4e4e4;
+    background-color: #6278df;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    transition: 0.5s;
+ }
+
+ .submit-btn:hover{
+    border: 2px solid #6278df;
+    background-color: #fff;
+    color: #6278df;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.63);
+ }
