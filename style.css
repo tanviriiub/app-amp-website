@@ -665,3 +665,73 @@ a{
     line-height: 22px;
     color: #767676;
  }
+
+
+ .contact-section{
+   padding-top: 80px;
+ }
+
+ .map-section{
+    width: 48%;
+ }
+
+ .contact-form-section{
+    width: 48%;
+
+ }
+
+.contact-header{
+    margin-top: 40px;
+}
+
+ .contact-header h4{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 38px;
+    margin-bottom: 20px;
+ }
+
+ .contact-header p{
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 31px;
+    color: #767676;
+ }
+
+ .contact-form-body{
+
+ }
+
+.contact-form{
+    margin-top: 60px;
+}
+
+ .contact-form .w100{
+    width: 100%;
+ }
+ .contact-form .w50{
+    width: 48%;
+ }
+
+ .contact-form .default-input{
+    margin-bottom: 20px;
+ }
+
+
+ .contact-form .submit-btn{
+    margin-left: 0;
+ }
+
+ .contact-form textarea{
+    height: 200px;
+ }
+
+
+ .footer-section{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31px;
+ }
